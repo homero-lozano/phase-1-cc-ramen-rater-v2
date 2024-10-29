@@ -14,41 +14,35 @@
   </header>
 
   
-  <div id="ramen-menu">
+  <div id="ramen-menu"></div>
+<div id="ramen-detail">
+  <img class="detail-image" />
+  <h2 class="name"></h2>
+  <h3 class="restaurant"></h3>
+  <p id="rating-display"></p>
+  <p id="comment-display"></p>
+</div>
+
+<form id="new-ramen">
+  <input type="text" id="new-name" name="new-name" placeholder="Name" />
+  <input type="text" id="new-restaurant" name="new-restaurant" placeholder="Restaurant" />
+  <input type="text" id="new-image" name="new-image" placeholder="Image URL" />
+  <input type="number" id="new-rating" name="new-rating" placeholder="Rating" />
+  <textarea id="new-comment" name="new-comment" placeholder="Comment" ></textarea>
+  <button type="submit" id="submit-button">Add Ramen</button>
+</form>
+
+<form id="edit-ramen">
+  <h4>Update the Featured Ramen</h4>
+  <label for="new-rating">Rating: </label>
+  <input type="number" name="rating" id="new-rating" required />
   
-  </div>
+  <label for="new-comment">Comment: </label>
+  <textarea name="comment" id="new-comment" required></textarea>
 
+  <button type="submit">Update</button>
+</form>
 
-  <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
-  </div>
-
-  <h3>Rating:</h3>
-  <p>
-    <span id='rating-display'>Insert rating here</span> / 10
-  </p>
-  <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
-  </p>
-
-
-  <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
-    <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" />
-    <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
-    <input type="submit" id='submit-button' value="Create" />
-  </form>
 
 </body>
 
